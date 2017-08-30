@@ -28,8 +28,8 @@ Content-Type: application/json
  Body
 
 {
-  "channel_token":"1b6fe627a0b34370364c4909b0437f28d59d2d45",  # android_token
-  "client_type":2 # 这个指定了客户端为安卓
+  "channel_token":"1b6fe627a0b34370364c4909b0437f28d59d2d45",  // android_token
+  "client_type":2 // 这个指定了客户端为安卓
 }
 ```
 
