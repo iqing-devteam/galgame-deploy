@@ -33,23 +33,5 @@ Content-Type: application/json
 }
 ```
 
-> 存档接口
-
-```js
- Method PUT
-Url: http://bilibili.iqing.in/ngame/654/archive/
-
-Header:
-
-Content-Type: application/json
-
-Body
-{
-  "channel_token":"1b6fe627a0b34370364c4909b0437f28d59d2d45", 
-  "client_type":2,  
-  "content": "1234" # 存档内容
-}
-```
-
 
 
