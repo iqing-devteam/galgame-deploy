@@ -10,3 +10,7 @@ http://bilibili.iqing.in/bilibili_login/?test=1&uname=1_15033405428099267212&tok
 
 
 
+说明：
+
+ 注册与登录API相同，如果用户已经注册则登录，如果未注册则为注册
+
