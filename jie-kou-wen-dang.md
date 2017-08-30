@@ -19,14 +19,14 @@ test：当test=1的时候跳过sign验证\(方便测试\)
 > 读档接口
 
 ```
-Method  POST 
+Method POST 
+
 http://bilibili.iqing.in/ngame/654/archive/
 
 Header:
 Content-Type: application/json
 
  Body
-
 {
   "channel_token":"1b6fe627a0b34370364c4909b0437f28d59d2d45",  // android_token
   "client_type":2 // 这个指定了客户端为安卓
