@@ -33,10 +33,6 @@ Content-Type: application/json
 }
 ```
 
-client\_type与channel\_token是对应的。
-
-当channel\_token等于登录接口返回的android\_token时， client\_type必须为2。
-
 > 存档接口
 
 ```js
@@ -49,15 +45,11 @@ Content-Type: application/json
 
 Body
 {
-  "channel_token":"1b6fe627a0b34370364c4909b0437f28d59d2d45",    
+  "channel_token":"1b6fe627a0b34370364c4909b0437f28d59d2d45", 
   "client_type":2,  
   "content": "1234" # 存档内容
 }
 ```
 
-client\_type与channel\_token是对应的。
 
-当channel\_token等于登录接口返回的android\_token时， client\_type必须为2。
-
-content为存档内容
 
