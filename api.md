@@ -1,60 +1,19 @@
-# 后端接口
+# 游戏引擎接口
 
-> 登录/注册接口
+游戏引擎提供一系列js接口，用来控制和管理游戏引擎的运作
 
+## 游戏引擎的挂起和激活
+
+移动端锁屏之前如果游戏引擎没有停止渲染，那么webview会报错，之后用户解锁回到应用之后游戏会出现黑屏的现象。
+
+解决方案是，移动端要在应用挂起之前挂起游戏引擎，在移动端恢复前台之后重新激活游戏引擎。
+
+> 挂起游戏引擎
 ```
-Method GET
-
-http://bilibili.iqing.in/bilibili_login/?test=1&uname=1_15033405428099267212&token=1_150340542809976434
-```
-
-uname: 用户昵称
-
-token:  合作方token，类似于id
-
-sign: 前面query的签名验证
-
-test：当test=1的时候跳过sign验证\(方便测试\)
-
-> 读档接口
-
-```
-Method POST
-http://bilibili.iqing.in/ngame/654/archive/
-
-Header:
-Content-Type: application/json
-
-Body
-{
-  "channel_token":"1b6fe627a0b34370364c4909b0437f28d59d2d45",  // android_token
-  "client_type":2
-}
+window.iqa.root.onDeactivate()
 ```
 
-channel_token: 来自于注册时返回的token，现在暂时固定为使用
-
-client_type: 客户端类型，if channel_token == android_token then  client_type = 2
-
-> 存档接口
-
+> 激活游戏引擎
 ```
-Method POST
-http://bilibili.iqing.in/ngame/654/archive/
-
-Header:
-Content-Type: application/json
-
-Body
-{
-  "channel_token":"1b6fe627a0b34370364c4909b0437f28d59d2d45",  // android_token
-  "client_type":2，
-  "content": ""
-}
+window.iqa.root.onActive()
 ```
-
-channel_token: 来自于注册时返回的token，现在暂时固定为使用
-
-client_type: 客户端类型，if channel_token == android_token then  client_type = 2
-
-content: 存档内容

@@ -5,4 +5,5 @@
   * [部署静态资源](qiniu.md)
   * [部署后端服务](backend.md)
   * [部署游戏引擎服务器](engine.md)
-* [接口文档](api.md)
+* [游戏引擎接口](api.md)
+* [后端REST API接口](rest-api.md)

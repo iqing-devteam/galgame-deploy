@@ -18,8 +18,9 @@
   * [部署自定义数据处理](qiniu.md#部署自定义数据处理)
 * [部署后端服务](backend.md#部署后端服务)
   * [后端架构](backend.md#后端架构)
-* [部署游戏引擎服务器](engine.md#部署游戏引擎服务器)
+* [部署游戏引擎服务器](engine.md)
+  * [配置游戏引擎](engine.md#配置游戏引擎)
+  * [使用nginx为engine提供服务， 并设置反向代理](engine.md#使用nginx为engine提供服务， 并设置反向代理)
 
 ## 参考资料
 * [七牛文档中心](https://developer.qiniu.com/)
-* [Docker — 从入门到实践](https://yeasy.gitbooks.io/docker_practice/content/)
