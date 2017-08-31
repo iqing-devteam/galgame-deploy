@@ -7,8 +7,8 @@
 ```javascript
 // engine/gamecontent/iqa.conf.json
 {
-    "imageCDN":"https://line5-image-patch-iqing.bilibiligame.net/",
-    "soundCDN":"https://line5-sound-patch-iqing.bilibiligame.net/",
+    "imageCDN":"https://image.example.com/",
+    "soundCDN":"https://sound.example.com/",
     "customProcessName":"iqing-rip-biligame"
 }
 ```
