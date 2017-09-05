@@ -9,7 +9,8 @@
 {
     "imageCDN":"https://image.example.com/",
     "soundCDN":"https://sound.example.com/",
-    "customProcessName":"iqing-rip-biligame"
+    "customProcessName":"iqing-rip-biligame",
+    "iOSScript":"https://example.com/handle.js"
 }
 ```
 
@@ -18,6 +19,8 @@ imageCDN对应七牛镜像image.iqing.in的储存空间
 soundCDN对应七牛镜像sound.iqing.in的储存空间
 
 customProcessName对应自定义数据处理名称
+
+iOSScript游戏引擎会额外加载的一个第三方JS，这个JS是留给合作方用来控制引擎用的。 参见[API文档](api.md)
 
 ## 使用nginx为游戏引擎提供服务， 并设置反向代理
 

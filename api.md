@@ -1,6 +1,6 @@
 # 游戏引擎接口
 
-游戏引擎提供一系列js接口，用来控制和管理游戏引擎的运作
+游戏引擎提供一系列JS接口，用来控制和管理游戏引擎的运作
 
 ## 游戏引擎的挂起和激活
 
@@ -16,4 +16,8 @@ window.iqa.root.onDeactivate()
 > 激活游戏引擎
 ```
 window.iqa.root.onActive()
+```
+
+``` 退出游戏
+window.client.backToApp()
 ```
