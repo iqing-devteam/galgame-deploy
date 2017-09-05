@@ -18,6 +18,7 @@ window.iqa.root.onDeactivate()
 window.iqa.root.onActive()
 ```
 
-``` 退出游戏
+> 退出游戏
+```
 window.client.backToApp()
 ```
