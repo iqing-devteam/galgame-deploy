@@ -10,7 +10,9 @@
     "imageCDN":"https://image.example.com/",
     "soundCDN":"https://sound.example.com/",
     "customProcessName":"iqing-rip-biligame",
-    "iOSScript":"https://example.com/handle.js"
+    "iOSScript":"https://example.com/handle.js",
+    "serverStatus": 0,
+    "boardInfo":"亲爱的用户:\n演绘服务器目前正在进行临时维护，在维护期间，您将暂时无法进行游戏。\n\n维护时间:\nxxxx年xx月xx日 xx:xx ~ xx:xx (预计)"
 }
 ```
 
@@ -21,6 +23,10 @@ soundCDN对应七牛镜像sound.iqing.in的储存空间
 customProcessName对应自定义数据处理名称
 
 iOSScript游戏引擎会额外加载的一个第三方JS，这个JS是留给合作方用来控制引擎用的。 参见[API文档](api.md)
+
+serverStatus代表服务状态，0是正常，1是公告，2是停机维护
+
+boardInfo为公告内容
 
 ## 使用nginx为游戏引擎提供服务， 并设置反向代理
 
